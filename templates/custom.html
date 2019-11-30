@@ -1,0 +1,14 @@
+<head>
+    <meta charset="UTF-8">
+    <title>User Information Form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="Submit" name="submit" value="Troll"/>
+    </form>
+    {% if submitbutton == "Submit" %} 
+        <h1> You entered {{ firstname }} {{ lastname }}</h1>
+    {% endif %}
+</body>
