@@ -24,5 +24,4 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('custom/', views.custom , name='custom'),
     path('', views.home , name='home'),
-    path('', views.reset , name='reset')
 ]
